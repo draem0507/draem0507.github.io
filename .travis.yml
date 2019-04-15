@@ -1,0 +1,39 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo clean
+  - hexo generate
+
+
+before_install:
+  - git config --global user.name "$USERNAME" 
+  - git config --global user.email "$EMAIL"
+  - git submodule init
+  - git submodule update
+
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "draem0507"
+  - git config user.email "draem0507@gmail.com"
+  - git add .
+  - git commit -m "automate update blogs by travis"
+  - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - source
+env:
+ global:
+   - GH_REF: github.com/draem0507/draem0507.github.io.git
