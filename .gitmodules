@@ -1,4 +1,4 @@
-[submodule "themes/hexo-theme-next"]
-	path = themes/hexo-theme-next
-	url = https://github.com/Doublemine/hexo-theme-next.git
-	branch = remote-v6.x
+[submodule "themes/next"]
+	path = themes/next
+	url = https://github.com/iissnan/hexo-theme-next.git
+	branch = master
