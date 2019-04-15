@@ -76,8 +76,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: next
-#theme: hexo-theme-next
+#theme: next
+theme: hexo-theme-next
 
 
 creative_commons: by-nc-sa
