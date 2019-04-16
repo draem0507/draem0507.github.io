@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: draem0507的博客空间
+title: draem0507
 subtitle: 记录和分享技术的点点滴滴
 description: Java、分布式、架构设计、涉及模式、函数式
 keywords: Java、分布式、架构设计、涉及模式、函数式
@@ -81,6 +81,14 @@ theme: hexo-theme-next
 
 
 creative_commons: by-nc-sa
+
+# hexo-admin authentification
+admin:
+  username: draem0507
+  password_hash: $2a$10$oHdOIfuCOq3akPpAAVyVC.Dbv/zuiKD5znipSQ9mQ03njGk/Bdn3i
+  secret: zxb
+  deployCommand: './admin_script/hexo-generate.sh'
+
 
 
 # Deployment
