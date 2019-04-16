@@ -89,7 +89,8 @@ admin:
   secret: zxb
   deployCommand: './admin_script/hexo-generate.sh'
 
-
+# JiaThis 分享服务
+jiathis: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
