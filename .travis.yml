@@ -19,6 +19,8 @@ before_install:
   - git config --global user.email "$EMAIL"
   - git submodule init
   - git submodule update
+  - git submodule foreach git pull origin v6.x
+
 
 
 after_script:
