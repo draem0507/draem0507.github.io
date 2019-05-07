@@ -423,44 +423,44 @@
       
 
       
-        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><blockquote>
+        <h1><span id="引言">引言</span></h1><blockquote>
 <p>博主之前使用第三方博客平台，例如CSDN，博客园等进行博客撰写；后面有尝试使用jeklly，最近发现hexo更适合；因此本文重点讲述hexo的搭建及其在使用中的一些心得。</p>
 </blockquote>
-<h1 id="hexo介绍"><a href="#hexo介绍" class="headerlink" title="hexo介绍"></a>hexo介绍</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>是一个快速、简洁且高效的博客框架。具有一键部署、快速渲染的特点；支持markdown语法，还拥有丰富的插件。</p>
-<h2 id="hexo的使用"><a href="#hexo的使用" class="headerlink" title="hexo的使用"></a>hexo的使用</h2><p>通过以下命令，可以快速完成hexo的安装、部署和启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<h1><span id="hexo介绍">hexo介绍</span></h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>是一个快速、简洁且高效的博客框架。具有一键部署、快速渲染的特点；支持markdown语法，还拥有丰富的插件。</p>
+<h2><span id="hexo的使用">hexo的使用</span></h2><p>通过以下命令，可以快速完成hexo的安装、部署和启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
 <p>前提条件：本地事先安装好git、npm等环境</p>
-<h2 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h2><p><a href="https://easyhexo.com/1-Hexo-install-and-config/" target="_blank" rel="noopener">详细安装说明</a></p>
-<h1 id="hexo发布"><a href="#hexo发布" class="headerlink" title="hexo发布"></a>hexo发布</h1><p>如果不想每篇文章都重复的调用 生成、发布等动作；那么以下工具可以提升我们的工作效率</p>
-<h2 id="hexo-admin"><a href="#hexo-admin" class="headerlink" title="hexo-admin"></a>hexo-admin</h2><p>hexo-admin是hexo的管理后台；类似于传统的文章管理后台，集成文章的创建、修改、发布等功能</p>
+<h2><span id="安装教程">安装教程</span></h2><p><a href="https://easyhexo.com/1-Hexo-install-and-config/" target="_blank" rel="noopener">详细安装说明</a></p>
+<h1><span id="hexo发布">hexo发布</span></h1><p>如果不想每篇文章都重复的调用 生成、发布等动作；那么以下工具可以提升我们的工作效率</p>
+<h2><span id="hexo-admin">hexo-admin</span></h2><p>hexo-admin是hexo的管理后台；类似于传统的文章管理后台，集成文章的创建、修改、发布等功能</p>
 <ul>
 <li><a href="https://www.jianshu.com/p/68e727dda16d" target="_blank" rel="noopener">hexo-admin 配置传送门1</a></li>
 <li><a href="https://blog.csdn.net/smileyan9/article/details/86666824" target="_blank" rel="noopener">hexo-admin 配置传送门2</a></li>
 <li><a href="https://github.com/hexojs/hexo-browsersync" target="_blank" rel="noopener">Browsersync 浏览器实时更新插件</a></li>
 </ul>
-<h2 id="travis"><a href="#travis" class="headerlink" title="travis"></a>travis</h2><blockquote>
+<h2><span id="travis">travis</span></h2><blockquote>
 <p><a href="https://www.travis-ci.org/" target="_blank" rel="noopener">travis</a> 一款免费好用的CI工具；通过项目库(例如github)关联后，每次提交代码，都可以自动触发编译，实时将最新的博客内容生成到个人主页上。对于一些敏感的信息，可以通过travis管理，而不用直接暴露在hexo的配置文件中。</p>
 </blockquote>
 <ul>
 <li><a href="https://blog.csdn.net/daye5465/article/details/77118886" target="_blank" rel="noopener">travis 配置传送门1</a></li>
 <li><a href="https://www.jianshu.com/p/5691815b81b6" target="_blank" rel="noopener">travis 配置传送门2</a></li>
 </ul>
-<h1 id="周边"><a href="#周边" class="headerlink" title="周边"></a>周边</h1><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><ul>
+<h1><span id="周边">周边</span></h1><h2><span id="编辑器">编辑器</span></h2><ul>
 <li><a href="https://blog.csdn.net/zhuzhuyule/article/details/58347687" target="_blank" rel="noopener">markdown语法介绍</a></li>
 <li><a href="https://github.com/zhuzhuyule/HexoEditor" target="_blank" rel="noopener">HexoEditor</a></li>
 </ul>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><ul>
+<h2><span id="插件">插件</span></h2><ul>
 <li><a href="https://www.jianshu.com/p/7e4453421b8f" target="_blank" rel="noopener">评论插件介绍</a></li>
 <li><a href="https://ioliu.cn/2017/add-valine-comments-to-your-blog/" target="_blank" rel="noopener">博主使用的评论插件  Valine</a></li>
 </ul>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><ul>
+<h2><span id="主题">主题</span></h2><ul>
 <li><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">知乎：好看点hexo 主题：</a></li>
 <li><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">hexo-theme-next</a></li>
 </ul>
-<h2 id="代码管理"><a href="#代码管理" class="headerlink" title="代码管理"></a>代码管理</h2><ul>
+<h2><span id="代码管理">代码管理</span></h2><ul>
 <li>source与master：使用master作为发布分支；另外创建一个博客源文件的分支，用于编辑md文件</li>
 <li><a href="https://blog.csdn.net/hzhj2007/article/details/79917059" target="_blank" rel="noopener">.gitmodules</a> 当我们使用hexo的主题的时候，可以通过gitmodules来完成动态编译工作，保证实时获取到最新版本的主题</li>
 </ul>
-<h1 id="问题FAQ"><a href="#问题FAQ" class="headerlink" title="问题FAQ"></a>问题FAQ</h1><p><strong>建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误</strong></p>
+<h1><span id="问题faq">问题FAQ</span></h1><p><strong>建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误</strong></p>
 <blockquote>
 <p>npm install hexo-deployer-git –save  </p>
 </blockquote>
@@ -473,7 +473,7 @@
 <blockquote>
 <p><a href="https://www.jianshu.com/p/60b3d5584afe" target="_blank" rel="noopener">解决办法</a></p>
 </blockquote>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://github.com/Doublemine/Doublemine.github.io/tree/source" target="_blank" rel="noopener">Doublemine</a></p>
+<h1><span id="参考">参考</span></h1><p><a href="https://github.com/Doublemine/Doublemine.github.io/tree/source" target="_blank" rel="noopener">Doublemine</a></p>
 
       
     </div>
@@ -504,8 +504,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019-04-16-my-first-post.html" rel="next" title="my_first_post">
-                <i class="fa fa-chevron-left"></i> my_first_post
+              <a href="/2019-04-16-my-first-post.html" rel="next" title="设计模式总结">
+                <i class="fa fa-chevron-left"></i> 设计模式总结
               </a>
             
           </div>
@@ -655,7 +655,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo介绍"><span class="nav-number">2.</span> <span class="nav-text">hexo介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo的使用"><span class="nav-number">2.1.</span> <span class="nav-text">hexo的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装教程"><span class="nav-number">2.2.</span> <span class="nav-text">安装教程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo发布"><span class="nav-number">3.</span> <span class="nav-text">hexo发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-admin"><span class="nav-number">3.1.</span> <span class="nav-text">hexo-admin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#travis"><span class="nav-number">3.2.</span> <span class="nav-text">travis</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#周边"><span class="nav-number">4.</span> <span class="nav-text">周边</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑器"><span class="nav-number">4.1.</span> <span class="nav-text">编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件"><span class="nav-number">4.2.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题"><span class="nav-number">4.3.</span> <span class="nav-text">主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码管理"><span class="nav-number">4.4.</span> <span class="nav-text">代码管理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题FAQ"><span class="nav-number">5.</span> <span class="nav-text">问题FAQ</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">hexo介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">hexo的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">安装教程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">hexo发布</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">hexo-admin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">travis</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">周边</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.2.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.3.</span> <span class="nav-text">主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.4.</span> <span class="nav-text">代码管理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">问题FAQ</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
