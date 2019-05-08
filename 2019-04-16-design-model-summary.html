@@ -97,14 +97,14 @@
 
 
   <meta name="description" content="模式是在特定环境下人们解决某类重复出现问题的一套成功或有效的解决方案；同样的，设计模式是软件工程领域上，在特定编程条件下，解决类似问题的思路。  设计原则 设计原则是在支持可维护性的同时，提高系统的可复用性。  最常见的7种面向对象设计原则如下表：    设计原则名称 定义 使用频率     单一职责原则 (SRP) 一个对象只负责其应有职责 ★★★★☆   开闭原则 (OCP) 对扩展开放，对">
-<meta name="keywords" content="设计模式">
+<meta name="keywords" content="Java、分布式、架构设计、涉及模式、函数式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式总结">
-<meta property="og:url" content="http://yoursite.com/2019-04-16-设计模式总结.html">
+<meta property="og:url" content="http://yoursite.com/2019-04-16-design-model-summary.html">
 <meta property="og:site_name" content="draem0507">
 <meta property="og:description" content="模式是在特定环境下人们解决某类重复出现问题的一套成功或有效的解决方案；同样的，设计模式是软件工程领域上，在特定编程条件下，解决类似问题的思路。  设计原则 设计原则是在支持可维护性的同时，提高系统的可复用性。  最常见的7种面向对象设计原则如下表：    设计原则名称 定义 使用频率     单一职责原则 (SRP) 一个对象只负责其应有职责 ★★★★☆   开闭原则 (OCP) 对扩展开放，对">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-07T16:21:36.726Z">
+<meta property="og:updated_time" content="2019-05-08T01:18:33.479Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式总结">
 <meta name="twitter:description" content="模式是在特定环境下人们解决某类重复出现问题的一套成功或有效的解决方案；同样的，设计模式是软件工程领域上，在特定编程条件下，解决类似问题的思路。  设计原则 设计原则是在支持可维护性的同时，提高系统的可复用性。  最常见的7种面向对象设计原则如下表：    设计原则名称 定义 使用频率     单一职责原则 (SRP) 一个对象只负责其应有职责 ★★★★☆   开闭原则 (OCP) 对扩展开放，对">
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019-04-16-设计模式总结">
+  <link rel="canonical" href="http://yoursite.com/2019-04-16-design-model-summary">
 
 
 
@@ -328,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019-04-16-设计模式总结.html">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019-04-16-design-model-summary.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="draem0507">
@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-08 00:21:36" itemprop="dateModified" datetime="2019-05-08T00:21:36+08:00">2019-05-08</time>
+                <time title="修改时间：2019-05-08 09:18:33" itemprop="dateModified" datetime="2019-05-08T09:18:33+08:00">2019-05-08</time>
               
             
           </span>
@@ -406,8 +406,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019-04-16-设计模式总结.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019-04-16-设计模式总结.html" itemprop="commentCount"></span>
+                <a href="/2019-04-16-design-model-summary.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019-04-16-design-model-summary.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -491,39 +491,35 @@
 <h1><span id="设计模式">设计模式</span></h1><blockquote>
 <p>设计模式从大体形态上，可以分为创建型、结构型和行为型。</p>
 </blockquote>
-<h2><span id="创建型">创建型</span></h2><div class="note info">
-            <p>创建型包括：工厂、单例、建造者和原型；其中工厂又可细分为简单工厂、工厂方法和抽象工厂。</p>
-          </div>
-
->工厂模式：当我们需要获取对象，且不关心对象如何创建出来的时候，则可以使用工厂模式
-
-分类：
-* 简单工厂：一个工厂对象，根据参数，返回对应的创建对象；
-* 工厂方法：当工厂对象生产对象复杂，因此将子对象的生产顺延到各个子工厂中实现，因此调用工厂方法，获得的子工厂对象，而非直接可用的对象
-* 抽象工厂：生产一个对象，需要一个与之匹配的流水线，来约束各个子模块工厂；
-
-> 单例模式：指的是当需要使用的对象，在系统中唯一的时候。
-
-分类：
-* 饿汉式：类创建时初始化
-* 懒汉式：第一次调用时初始化，两把锁
-* 内部类方式：可以保证延迟加载
-* 枚举方式：线程安全
-
-> 建造者：调用者可以通过组装来完成对象创建，比工厂模式更加灵活。建造者往往也会有一些默认的初始化步骤，用于简化对象的创建
-
-举例：xx.bulidCpu().buildBoard().create()
-
-
-> 原型模式：通过拷贝原型创建新的对象
-
-举例：xx.clone();   xx.deepClone(); xx.copyProperties();
-
-
-## 结构型
-<div class="note info">
-            <p>结构型包括：适配器模式、装饰者模式、代理模式、门面模式（外观模式）、桥梁模式、组合模式、享元模式。</p>
-          </div>
+<h2><span id="创建型">创建型</span></h2><p>创建型包括：工厂、单例、建造者和原型；其中工厂又可细分为简单工厂、工厂方法和抽象工厂。</p>
+<blockquote>
+<p>工厂模式：当我们需要获取对象，且不关心对象如何创建出来的时候，则可以使用工厂模式</p>
+</blockquote>
+<p>分类：</p>
+<ul>
+<li>简单工厂：一个工厂对象，根据参数，返回对应的创建对象；</li>
+<li>工厂方法：当工厂对象生产对象复杂，因此将子对象的生产顺延到各个子工厂中实现，因此调用工厂方法，获得的子工厂对象，而非直接可用的对象</li>
+<li>抽象工厂：生产一个对象，需要一个与之匹配的流水线，来约束各个子模块工厂；</li>
+</ul>
+<blockquote>
+<p>单例模式：指的是当需要使用的对象，在系统中唯一的时候。</p>
+</blockquote>
+<p>分类：</p>
+<ul>
+<li>饿汉式：类创建时初始化</li>
+<li>懒汉式：第一次调用时初始化，两把锁</li>
+<li>内部类方式：可以保证延迟加载</li>
+<li>枚举方式：线程安全</li>
+</ul>
+<blockquote>
+<p>建造者：调用者可以通过组装来完成对象创建，比工厂模式更加灵活。建造者往往也会有一些默认的初始化步骤，用于简化对象的创建</p>
+</blockquote>
+<p>举例：xx.bulidCpu().buildBoard().create()</p>
+<blockquote>
+<p>原型模式：通过拷贝原型创建新的对象</p>
+</blockquote>
+<p>举例：xx.clone();   xx.deepClone(); xx.copyProperties();</p>
+<h2><span id="结构型">结构型</span></h2><p>结构型包括：适配器模式、装饰者模式、代理模式、门面模式（外观模式）、桥梁模式、组合模式、享元模式。</p>
 <blockquote>
 <p>适配器模式：借助适配器，无缝完成功能调用</p>
 </blockquote>
@@ -545,9 +541,7 @@
 <blockquote>
 <p>享元模式：使用共享对象可有效地支持大量的细粒度的对象</p>
 </blockquote>
-<h2><span id="行为型">行为型</span></h2><div class="note info">
-            <p>行为型包括：策略模式、模版模式、观察者模式、迭代器模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
-          </div>
+<h2><span id="行为型">行为型</span></h2><p>行为型包括：策略模式、模版模式、观察者模式、迭代器模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。</p>
 <blockquote>
 <p>策略模式：不同场景，使用不同策略应对</p>
 </blockquote>
@@ -620,12 +614,6 @@
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
-          
-        </div>
       
 
       
@@ -732,19 +720,6 @@
               
 
               
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">标签</span>
-                  
-                </div>
-              
             </nav>
           
 
@@ -804,7 +779,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">设计原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">创建型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">行为型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">设计模式历练过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">一些经验</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">设计原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">创建型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">结构型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">行为型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">设计模式历练过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">一些经验</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
