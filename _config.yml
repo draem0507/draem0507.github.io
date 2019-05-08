@@ -99,6 +99,3 @@ deploy:
   repo: https://github.com/draem0507/draem0507.github.io.git
   #github: git@github.com:draem0507/draem0507.github.io.git,master
   branch: master
-
-toc:
-  maxDepth: 3

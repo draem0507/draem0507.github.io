@@ -3,6 +3,7 @@ author: draem0507
 date: 2019-05-06 22:20:28
 tags:
 ---
+
 # 引言
 > 博主之前使用第三方博客平台，例如CSDN，博客园等进行博客撰写；后面有尝试使用jeklly，最近发现hexo更适合；因此本文重点讲述hexo的搭建及其在使用中的一些心得。
 # hexo介绍
@@ -17,6 +18,8 @@ $ npm install
 $ hexo server
 ```
 前提条件：本地事先安装好git、npm等环境
+
+<!--more-->
 
 ## 安装教程
 [详细安装说明](https://easyhexo.com/1-Hexo-install-and-config/)
